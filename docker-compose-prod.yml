@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  react-app:
+    # stdin_open: true #//for options -i
+    # tty: true #//for optiond -t
+    build:
+      context: .
+      dockerfile: Dockerfile.prod  
+      args:
+        - REACT_APP_NAME=mithra-prod
+    ports:
+      - "1337:80"
+

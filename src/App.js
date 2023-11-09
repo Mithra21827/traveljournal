@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      {/* <h1>{`HEllo ${process.env.REACT_APP_NAME}`}</h1> */}
       {card}
     </div>
   );
